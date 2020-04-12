@@ -1,0 +1,38 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="state">
+            <h2><span jhiTranslate="celkApp.state.detail.title">Estado</span> {{ state.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="federated.initials">Sigla</span></dt>
+                <dd>
+                    <span>{{ state.initials }}</span>
+                </dd>
+                <dt><span jhiTranslate="federated.name">Nome</span></dt>
+                <dd>
+                    <span>{{ state.name }}</span>
+                </dd>
+                <dt><span jhiTranslate="federated.createdDate">Criado em</span></dt>
+                <dd>
+                    <span>{{ state.createdDate | date:'dd-MM-yyyy HH:mm:ss'}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Voltar</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/state', state.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Editar</span>
+            </button>
+        </div>
+    </div>
+</div>

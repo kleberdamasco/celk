@@ -15,6 +15,18 @@
         The initial schema has the '00000000000001' id, so that it is over-written if we re-generate it.
     -->
     <changeSet id="00000000000001" author="jhipster">
+
+        <createTable tableName="jhi_federated_state">
+            <column name="id" type="bigint" >
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="initials" type="varchar(2)">
+                <constraints unique="true" nullable="false" uniqueConstraintName="fx_constraint_uniq"/>
+            </column>
+            <column name="name" type="varchar(50)"/>
+            <column name="created_date" type="timestamp"/>
+        </createTable>
+
         <createTable tableName="jhi_user">
             <column name="id" type="bigint" >
                 <constraints primaryKey="true" nullable="false"/>
@@ -78,6 +90,17 @@
         <addNotNullConstraint   columnName="password_hash"
                                 columnDataType="varchar(60)"
                                 tableName="jhi_user"/>
+
+        <loadData
+            file="config/liquibase/data/federated_state.csv"
+            separator=";"
+            tableName="jhi_federated_state">
+            <column name="id" type="numeric"/>
+            <column name="initials" type="string"/>
+            <column name="name" type="string"/>
+            <column name="created_date" type="timestamp"/>
+        </loadData>
+
         <loadData
                   file="config/liquibase/data/user.csv"
                   separator=";"

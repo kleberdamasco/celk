@@ -1,0 +1,9 @@
+{
+  "federated": {
+    "title": "Unidades federativas",
+    "new": "Criar nova UF",
+    "initials": "Singla",
+    "createdDate": "Data de criação",
+    "name": "Nome"
+  }
+}

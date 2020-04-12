@@ -1,16 +1,13 @@
 {
   "home": {
-    "title": "Bem vindo, Java Hipster!",
+    "title": "Bem vindo ao desafio da Celk sistemas",
     "subtitle": "Esta é a página principal",
     "logged": {
       "message": "Você está logado como \"{{username}}\"."
     },
-    "question": "Em caso de dúvida sobre o JHipster:",
+    "explanation": "Essa aplicação foi criada automagicamente com JHipster com o intuito de agilizar o processo na criação de aplicações web modernas evitando o famoso boilerplate. <br/> <b>Keep it Simple</b> <br/>Em caso de dúvida sobre o JHipster:",
     "link": {
       "homepage": "Página principal JHipster",
-      "stackoverflow": "JHipster no Stack Overflow",
-      "bugtracker": "JHipster bug tracker",
-      "chat": "Sala de bate-papo pública JHipster",
       "follow": "siga @jhipster no Twitter"
     },
     "like": "Se você gosta do JHipster, não se esqueça de avaliar no",
