@@ -1,0 +1,42 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "br.com.kleber.celk",
+      "nativeLanguage": "pt-br"
+    },
+    "jhipsterVersion": "6.8.0",
+    "applicationType": "monolith",
+    "baseName": "celkapp",
+    "packageName": "br.com.kleber.celk",
+    "packageFolder": "br/com/kleber/celk",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MTQ3MDYyNDAyZDdhOWM1YWU1NmE1MmY5N2I1OWQwNzQzNDAxMmM4MGJhMTAxMzk3YmQwMmI2MzFiY2RhNTRkODBjZTUyYWJiYmFmMTAxMjg3MzdlOWY5ZTUwNWNmNTRkMTk0ODY0MTA2MmIzNDcyNzlkMjliNDc5OTM1M2UyMzk=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "superhero",
+    "clientThemeVariant": "dark",
+    "creationTimestamp": 1586658309924,
+    "testFrameworks": ["gatling", "protractor"],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "pt-br",
+    "languages": ["pt-br"],
+    "blueprints": []
+  }
+}
